@@ -51,7 +51,7 @@ fun getFirstNum(): Double {
 }
 
 fun getNextNum(): Double {
-    print("Next number: ")
+    print("Next number: ") //Next number here
     return try {
         readLine()!!.toDouble()
     }catch (e: Exception){
@@ -59,3 +59,11 @@ fun getNextNum(): Double {
         0.0
     }
 }
+
+
+
+
+
+
+
+
