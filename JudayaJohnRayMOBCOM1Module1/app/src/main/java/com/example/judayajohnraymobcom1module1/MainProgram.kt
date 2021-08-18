@@ -1,9 +1,19 @@
 package com.example.judayajohnraymobcom1module1
 
 fun main(){
-    val food = "hot dog"
+    val b = 69
 
-    val value = 18.5F
+    val value:Float = 18.5F
 
     val randomVal = "lbs"
+
+    val patient: String
+
+    patient = "Zombie"
+
+    var age = 20
+
+    var myMutableVariable = 0x730d06
+
+//    val  = 1
 }
