@@ -1,8 +1,4 @@
-package com.example.myapplication
-
-//class MainProgram {
-//
-//}
+package com.example.judayajohnraymobcom1module1
 
 fun main(){
     val food = "hot dog"
