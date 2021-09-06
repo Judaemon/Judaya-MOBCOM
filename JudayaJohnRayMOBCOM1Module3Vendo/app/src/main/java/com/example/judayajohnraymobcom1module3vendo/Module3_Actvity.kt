@@ -19,7 +19,6 @@ fun main() {
 
     do {
         var totalCost = 0.0
-        var change = 0.0
 
         displayMenu()
         totalCost += getBeverageUsingWhile()
@@ -27,7 +26,7 @@ fun main() {
 
         println("Total: $totalCost")
 
-        change = calculateChange(totalCost)
+        val change = calculateChange(totalCost)
         println("       Change is $change")
 
         print("Another order? ")
@@ -121,7 +120,7 @@ fun calculateChange(totalCost: Double): Double {
 // Im not deleting this code for future reference lang po
 fun getDessert(desserts: Array<Array<String>>): Double {
     print("Enter Dessert: ")
-    val input = readLine();
+    val input = readLine()
 
     desserts.forEachIndexed  { _, element ->
         if (element[0] == input){
@@ -136,7 +135,7 @@ fun getDessert(desserts: Array<Array<String>>): Double {
 
 fun getBeverage(beverages: Array<Array<String>>): Double {
     print("Enter Beverage: ")
-    val input = readLine();
+    val input = readLine()
 
     beverages.forEachIndexed  { _, element ->
         if (element[0] == input){
