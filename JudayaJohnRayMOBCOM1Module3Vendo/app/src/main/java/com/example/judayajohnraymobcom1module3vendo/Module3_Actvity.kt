@@ -98,6 +98,7 @@ fun getDessertUsingWhile(): Double {
     }
 }
 
+// Returns Change to main because it might be useful
 fun calculateChange(totalCost: Double): Double {
     print("Enter cash tendered: ")
     val readLine = readLine()
