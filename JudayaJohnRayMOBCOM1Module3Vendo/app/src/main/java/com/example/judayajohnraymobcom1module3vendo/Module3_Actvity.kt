@@ -27,14 +27,12 @@ fun main() {
         println("Total: $totalCost")
 
         val change = calculateChange(totalCost)
-        println("       Change is $change")
 
         print("Another order? ")
         getNewOrder = readLine() == "Y"
     }while (getNewOrder)
 
     print("       Bye!")
-
 }
 
 fun displayMenu() {
@@ -42,7 +40,7 @@ fun displayMenu() {
     println("       [J] Juice 12.50                      [1] Cake 35.00")
     println("       [H] Hot Choco 18.50                  [2] Pudding 12.50")
     println("       [C] Coffee 10.00                     [3] Flan 10.00")
-    println("       [S] Soda 25.5                        [4] Salad 20.50")
+    println("       [S] Soda 25.50                       [4] Salad 20.50")
 }
 
 fun getBeverageUsingWhile(): Double {
@@ -59,7 +57,7 @@ fun getBeverageUsingWhile(): Double {
         }
         "C" -> {
             println("       This Coffee, will cost you 10.00")
-            return 10.50
+            return 10.00
         }
         "S" -> {
             println("       This Soda, will cost you 25.50")
@@ -112,6 +110,7 @@ fun calculateChange(totalCost: Double): Double {
         return change
     }
 
+    println("       Change is $change")
     return change
 }
 
