@@ -29,7 +29,7 @@ fun main() {
         val change = calculateChange(totalCost)
 
         print("Another order? ")
-        getNewOrder = readLine() == "Y"
+        getNewOrder = readLine().toString().uppercase() == "Y"
     }while (getNewOrder)
 
     print("       Bye!")
@@ -46,7 +46,7 @@ fun displayMenu() {
 fun getBeverageUsingWhile(): Double {
     print("Enter Beverage: ")
 
-    when (readLine()) {
+    when (readLine().toString().uppercase()) {
         "J" -> {
             println("       This Juice, will cost you 12.50")
             return 12.50
@@ -73,6 +73,7 @@ fun getBeverageUsingWhile(): Double {
 fun getDessertUsingWhile(): Double {
     print("Enter Dessert: ")
 
+//    try catch for catching character inputs
 //    -1 for invalid input
     when (try { readLine()?.toInt() } catch (e: NumberFormatException) { -1 }) {
         1 -> {
@@ -101,13 +102,15 @@ fun getDessertUsingWhile(): Double {
 // Returns Change to main because it might be useful
 fun calculateChange(totalCost: Double): Double {
     print("Enter cash tendered: ")
-    val readLine = readLine()
-    val input = readLine ?.toDouble() ?: 0.0
 
-    val change = input - totalCost
+//    ternary operation for null inputs
+    val cash: Double = (readLine()?.toDoubleOrNull() ?: 0.0)
 
-    if (input < totalCost){
-        println("       You lack $change")
+    val change = (cash - totalCost)
+
+    if (cash < totalCost){
+//        multiplying to -1 to convert to positive number
+        println("       You lack " + change * -1)
         return change
     }
 
@@ -115,6 +118,8 @@ fun calculateChange(totalCost: Double): Double {
     return change
 }
 
+
+//--------------------------------------------
 // Di ko na basa instructions while pala gagamitin
 // using 2d array mas better if like marami yung choices kase its looping
 // Im not deleting this code for future reference lang po
