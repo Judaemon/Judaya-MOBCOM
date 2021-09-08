@@ -93,10 +93,10 @@ fun calculateChange(totalCost: Double): Double {
 //    ternary operation for null inputs
     val cash: Double = (readLine()?.toDoubleOrNull() ?: 0.0)
 
-    val change = (cash - totalCost)
+    val change = cash - totalCost
 
 //    if expression
 //    change * -1 is used to convert negative number to positive number
-    println("       " + if (cash < totalCost) "You lack " + change * -1 else "Change is $change")
+    println("       " + if (cash >= totalCost) "Change is $change" else "You lack " + change * -1 )
     return change
 }
