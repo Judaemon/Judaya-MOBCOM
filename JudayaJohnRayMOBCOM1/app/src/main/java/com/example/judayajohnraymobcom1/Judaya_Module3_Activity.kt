@@ -32,6 +32,7 @@ fun displayMenu() {
 fun getBeverageUsingWhile(): Double {
     print("Enter Beverage: ")
 
+//    Gets input then turns it to uppercase
     when (readLine().toString().uppercase()) {
         "J" -> {
             println("       This Juice, will cost you 12.50")
@@ -94,12 +95,8 @@ fun calculateChange(totalCost: Double): Double {
 
     val change = (cash - totalCost)
 
-    if (cash < totalCost){
-//        multiplying to -1 to convert to positive number
-        println("       You lack " + change * -1)
-        return change
-    }
-
-    println("       Change is $change")
+//    if expression
+//    change * -1 is used to convert negative number to positive number
+    println("       " + if (cash < totalCost) "You lack " + change * -1 else "Change is $change")
     return change
 }
