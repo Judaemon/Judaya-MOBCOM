@@ -19,13 +19,13 @@ fun main() {
     do {
         var totalCost = 0.0
 
-        displayMenu()
+        displayMenuTest()
         totalCost += getBeverage(beverages)
         totalCost += getDessert(desserts)
 
         println("Total: $totalCost")
 
-        val change = calculateChangeTest(totalCost)
+        calculateChangeTest(totalCost)
 
         print("Another order? ")
         getNewOrder = readLine().toString().uppercase() == "Y"
