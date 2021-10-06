@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">JudayaMLab01</string>
+    <string name="red_light_green_light">Red Light, Green Light</string>
+    <string name="button">Button</string>
+    <string name="red">Red</string>
+    <string name="yellow">Yellow</string>
+    <string name="green">Green</string>
+    <string name="gOver">Game Over!</string>
+    <string name="stop">Stop!</string>
+    <string name="ready">Ready!</string>
+    <string name="go">Go!</string>
+</resources>
