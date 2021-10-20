@@ -19,8 +19,8 @@
     <string name="txtNum">Mobile Number</string>
     <string name="txtDAdd">Delivery Address</string>
     <string name="txtEmail">Email Address</string>
-    <string name="txtFood">Meme Orders</string>
-    <string name="txtBev">Meme Origin </string>
+    <string name="txtFood">Food Orders</string>
+    <string name="txtBev">Beverage Order </string>
 
     <string name="btnConf">Confirm</string>
     <string name="submit_order">Submit Order</string>
