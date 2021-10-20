@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">JudayaMLab02</string>
+    <string name="title_activity_welcome">welcome</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="todo">TODO</string>
+    <string name="welcome_to_my_meme_app">Welcome to meme cafe</string>
+    <string name="order_meme_now">Order Meme Now</string>
+
+    <string name="btnNext">NEXT</string>
+
+    <string name="txtName">Complete Name</string>
+    <string name="txtNum">Mobile Number</string>
+    <string name="txtDAdd">Delivery Address</string>
+    <string name="txtEmail">Email Address</string>
+    <string name="txtFood">Meme Orders</string>
+    <string name="txtBev">Meme Origin </string>
+
+    <string name="btnConf">Confirm</string>
+    <string name="submit_order">Submit Order</string>
+</resources>
