@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">JudayaFLab01</string>
+    <string name="user_email">user_email@gmail.com</string>
+
+    <string name="profile">Profile</string>
+    <string name="create_event">Create Event</string>
+    <string name="send_message">Send Message</string>
+
+    <string name="events">Events</string>
+    <string name="invites">Invites</string>
+
+    <string name="backup">Backup</string>
+    <string name="help_feedback"><![CDATA[Help & Feedback]]></string>
+
+    <string name="main">Main</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="option">Options</string>
+
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+
+    <string name="nickname">Judaemon</string>
+    <string name="image_description">image</string>
+
+    <string name="event_title">Event Title</string>
+    <string name="location">Event Location</string>
+    <string name="starting_date">Starting Date</string>
+    <string name="ending_date">Ending Date</string>
+    <string name="starting_time">Starting Time</string>
+    <string name="ending_time">Ending Time</string>
+    <string name="save_event">Save Event</string>
+    <string name="event_list">Event List</string>
+
+    <string name="username">Username</string>
+    <string name="gender">Gender</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="facebook_link">Facebook link</string>
+    <string name="cancel">cancel</string>
+</resources>

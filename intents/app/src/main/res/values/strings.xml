@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">intentsProject</string>
+    <string name="actTitle">OPTIONS</string>
+    <string name="btnWeb">WEB BROWSER</string>
+    <string name="btnDialer">CALL</string>
+    <string name="btnEmail">EMAIL</string>
+    <string name="btnCamera">CAMERA</string>
+    <string name="btnNext">NEXT</string>
+    <string name="btnToast">A TOAST</string>
+
+    <string name="txtSubj">Subject</string>
+    <string name="txtEmail">email@address.com</string>
+    <string name="txtMsg">Message</string>
+    <string name="lblEmail">Send to (Email)</string>
+    <string name="btnBack">BACK</string>
+    <string name="btnMail">MAIL</string>
+    <string name="email">Email</string>
+    <string name="message">Message</string>
+    <string name="subject">Subject</string>
+    <string name="back">back</string>
+    <string name="send">Send</string>
+</resources>

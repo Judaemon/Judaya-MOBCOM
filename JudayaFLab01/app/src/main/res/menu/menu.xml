@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/grp1">
+        <item
+            android:id="@+id/id_item1"
+            android:icon="@drawable/ic_person"
+            android:title="@string/profile"/>
+
+        <item
+            android:id="@+id/id_item2"
+            android:icon="@drawable/ic_edit"
+            android:title="@string/create_event"/>
+
+        <item
+            android:id="@+id/id_item3"
+            android:icon="@drawable/ic_send"
+            android:title="@string/send_message"/>
+    </group>
+
+    <group android:id="@+id/grp2">
+        <item
+            android:id="@+id/id_item4"
+            android:title="@string/events"/>
+
+        <item
+            android:id="@+id/id_item5"
+            android:title="@string/invites"/>
+    </group>
+
+    <group android:id="@+id/grp3">
+        <item android:title="@string/option">
+            <menu>
+                <item
+                    android:id="@+id/id_item6"
+                    android:icon="@drawable/ic_backup"
+                    android:title="@string/backup"/>
+
+                <item
+                    android:id="@+id/id_item7"
+                    android:icon="@drawable/ic_help"
+                    android:title="@string/help_feedback"/>
+            </menu>
+        </item>
+    </group>
+</menu>
