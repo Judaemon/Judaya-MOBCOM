@@ -28,53 +28,38 @@ class HomeActivity : AppCompatActivity() {
 
         navView.setNavigationItemSelectedListener {
             when(it.itemId){
-                R.id.id_item1-> {
+                R.id.menu_profile-> {
                     this.startActivity(Intent(this,ProfileActivity::class.java))
                     this.startActivity(intent)
-                    Toast.makeText(
-                        applicationContext,
-                        "Profile",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    toast("Profile")
                 }
-                R.id.id_item2-> {
+                R.id.menu_create_event-> {
                     this.startActivity(Intent(this,CreateEventActivity::class.java))
                     this.startActivity(intent)
-                    Toast.makeText(
-                        applicationContext,
-                        "Create Event",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    toast("Create Event")
                 }
-                R.id.id_item3-> {
+                R.id.menu_send_message-> {
                     this.startActivity(Intent(this,SendMessageActivity::class.java))
                     this.startActivity(intent)
-                    Toast.makeText(
-                        applicationContext,
-                        "Send Message",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    toast("Send Message")
                 }
-                R.id.id_item4-> Toast.makeText(
-                    applicationContext,
-                    "Events",
-                    Toast.LENGTH_SHORT
-                ).show()
-                R.id.id_item5-> Toast.makeText(
-                    applicationContext,
-                    "Past Events",
-                    Toast.LENGTH_SHORT
-                ).show()
-                R.id.id_item6-> Toast.makeText(
-                    applicationContext,
-                    "Back up",
-                    Toast.LENGTH_SHORT
-                ).show()
-                R.id.id_item7-> Toast.makeText(
-                    applicationContext,
-                    "Help & Feedback",
-                    Toast.LENGTH_SHORT
-                ).show()
+                R.id.menu_manage_user-> {
+                    this.startActivity(Intent(this,ManageUserActivity::class.java))
+                    this.startActivity(intent)
+                    toast("Manage User")
+                }
+                R.id.menu_events->{
+                    toast("Events")
+                }
+                R.id.invites->{
+                    toast("Past Events")
+                }
+                R.id.menu_back_up-> {
+                    toast("Back up")
+                }
+                R.id.menu_help_feedback-> {
+                    toast("Help & Feedback")
+                }
                 else-> Toast.makeText(applicationContext, "Error can't find item", Toast.LENGTH_SHORT).show()
             }
             true
@@ -82,6 +67,9 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
+    private fun toast(message: String){
+        Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
+    }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (toggle.onOptionsItemSelected(item)){
             return true

@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JudayaFLab01">
         <activity
+            android:name=".ManageUserActivity"
+            android:exported="true" />
+        <activity
             android:name=".SendMessageActivity"
             android:exported="true" />
         <activity

@@ -13,9 +13,12 @@ import com.google.android.material.textfield.TextInputEditText
 import java.util.*
 import java.text.SimpleDateFormat
 import android.view.View.OnFocusChangeListener
-import com.google.android.material.timepicker.TimeFormat
 
 class CreateEventActivity : AppCompatActivity() {
+    private lateinit var eventTitle:TextInputEditText
+    private lateinit var eventLocation:TextInputEditText
+    private lateinit var eventInviteList:TextInputEditText
+
     private lateinit var startDate:TextInputEditText
     private lateinit var endDate:TextInputEditText
 
@@ -45,6 +48,10 @@ class CreateEventActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_event)
 
+        eventTitle = findViewById(R.id.inputNewEventTitle)
+        eventLocation = findViewById(R.id.inputNewEventLocation)
+        eventInviteList = findViewById(R.id.inputNewEventList)
+
         val homeMenu = findViewById<Button>(R.id.btnHomeMenu)
         homeMenu.setOnClickListener {
             Toast.makeText(this, "Event detail is not  save", Toast.LENGTH_SHORT).show()
@@ -53,6 +60,7 @@ class CreateEventActivity : AppCompatActivity() {
 
         val saveEvent = findViewById<Button>(R.id.btnSaveNewEvent)
         saveEvent.setOnClickListener {
+
             Toast.makeText(this, "Event detail saved", Toast.LENGTH_SHORT).show()
         }
 
@@ -118,6 +126,7 @@ class CreateEventActivity : AppCompatActivity() {
         focusedDateInput = inputToBeUpdated
         DatePickerDialog(
             this,
+            R.style.my_dialog_theme,
             datePickerListener,
             calendar.get(Calendar.YEAR),
             calendar.get(Calendar.MONTH),
@@ -144,6 +153,7 @@ class CreateEventActivity : AppCompatActivity() {
 
         TimePickerDialog(
             this,
+            R.style.my_dialog_theme,
             timePickerListener,
             calendar.get(Calendar.HOUR_OF_DAY),
             calendar.get(Calendar.MINUTE),
